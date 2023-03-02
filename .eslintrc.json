@@ -1,0 +1,53 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:jsdoc/recommended-error"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "jsdoc/require-param-description": 0,
+        "jsdoc/require-returns-description": 0,
+        "jsdoc/require-returns": 0
+    },
+    "plugins": [
+        "jsdoc"
+    ],
+    "settings": {
+        "jsdoc": {
+            "mode": "jsdoc",
+            "tagNamePreference": {
+                "todo": {
+                    "message": "We expect immediate perfection, so don't leave to-dos in your code."
+                }
+            },
+            "preferredTypes": {
+                "*": false 
+            }
+        }
+    }
+}
