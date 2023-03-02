@@ -19,6 +19,6 @@
   "devDependencies": {
     "@solana/web3.js": "^1.73.3",
     "eslint": "^8.35.0",
-    "eslint-plugin-jsdoc": "^40.0.0"
+    "eslint-plugin-jsdoc": "^40.0.1"
   }
 }
