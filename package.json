@@ -1,23 +1,29 @@
 {
-  "name": "learning-solana",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/whichvillains/learning-solana.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/whichvillains/learning-solana/issues"
-  },
-  "homepage": "https://github.com/whichvillains/learning-solana#readme",
-  "devDependencies": {
-    "@solana/web3.js": "^1.73.3",
-    "eslint": "^8.35.0"
-  }
+    "name": "learning-solana",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/whichvillains/learning-solana.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/whichvillains/learning-solana/issues"
+    },
+    "homepage": "https://github.com/whichvillains/learning-solana#readme",
+    "devDependencies": {
+        "@solana/web3.js": "^1.73.3",
+        "@typescript-eslint/eslint-plugin": "^5.54.0",
+        "@typescript-eslint/parser": "^5.54.0",
+        "cli-select-2": "^2.0.0",
+        "commander": "^10.0.0",
+        "eslint": "^8.35.0",
+        "typescript": "^4.9.5"
+    }
 }
