@@ -4,8 +4,7 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:jsdoc/recommended-error"
+        "eslint:recommended"
     ],
     "overrides": [
     ],
@@ -31,28 +30,12 @@
             "error",
             "always"
         ],
-        "jsdoc/require-param-description": 0,
-        "jsdoc/require-returns-description": 0,
-        "jsdoc/require-returns": 0,
-        "jsdoc/require-returns-type": 0,
         "no-unused-vars": 0,
         "no-empty": 0,
         "strict": 1
     },
     "plugins": [
-        "jsdoc"
     ],
     "settings": {
-        "jsdoc": {
-            "mode": "typescript",
-            "tagNamePreference": {
-                "todo": {
-                    "message": "We expect immediate perfection, so don't leave to-dos in your code."
-                }
-            },
-            "preferredTypes": {
-                "*": false 
-            }
-        }
     }
 }
