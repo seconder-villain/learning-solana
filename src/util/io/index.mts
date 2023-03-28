@@ -1,0 +1,1 @@
+export { inputPubkey } from './input.mjs';

@@ -1,7 +1,7 @@
 import { PublicKey } from '@solana/web3.js';
 import { getClusterApiUrl } from './get-cluster-api-url.mjs';
 
-export const getBalanceUsingJSONRPC = (address: PublicKey) => {
+export const getBalanceUsingJSONRPC = async (address: PublicKey) => {
     const url = getClusterApiUrl();
     return fetch(
         url, 
