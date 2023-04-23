@@ -2,20 +2,24 @@ import { serialize } from 'borsh';
 
 export class Instruction {
     variant;
-    name;
-    message
+    title;
+    description;
+    rating;
     constructor({
         variant,
-        name,
-        message
+        title,
+        description,
+        rating
     }: {
         variant: number
-        name: string
-        message: string
+        title: string
+        description: string
+        rating: number
     }) {
         this.variant = variant;
-        this.name = name;
-        this.message = message;
+        this.title = title;
+        this.description = description;
+        this.rating = rating;
     }
 }
 
@@ -27,8 +31,9 @@ export const serializeInstruction = (value: Instruction) => {
                 kind: 'struct',
                 fields: [
                     ['variant', 'u8'],
-                    ['name', 'string'],
-                    ['message', 'string'],
+                    ['title', 'string'],
+                    ['rating', 'u8'],
+                    ['description', 'string'],
                 ],
             },
         ],

@@ -35,5 +35,4 @@ pub fn add_student_intro(
     msg!("Message: {}", message);
     
     Ok(())
-
 }

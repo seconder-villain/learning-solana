@@ -9,5 +9,6 @@ export { mintToken } from './mint-token.mjs';
 export { burnTokenPublicly } from './burn-token-publicly.mjs';
 export { burnToken } from './burn-token.mjs';
 export { approveTokenPublicly } from './approve-token-publicly.mjs';
+export { approveToken } from './approve-token.mjs';
 export { revokeToken } from './revoke-token.mjs';
 export { revokeTokenPublicly } from './revoke-token-publicly.mjs';
