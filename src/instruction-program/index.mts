@@ -2,10 +2,11 @@ import { PublicKey, sendAndConfirmTransaction, Transaction, TransactionInstructi
 import { getConnection } from '../util/get-connection.mjs';
 import { selector } from '../util/index.mjs';
 import { Instruction, serializeInstruction } from './serialize.mjs';
+import { address } from "../config.mjs";
 
 const connection = getConnection('confirmed');
 const payer = await selector.selectKeypair('payer');
-const programId = new PublicKey('APktHvVTBGG8oj57vejtQjxhTpUqLKJYWCAtavJe6iWv');
+const programId = new PublicKey(address.instructionProgram);
 const transaction = new Transaction();
 
 const data = serializeInstruction(new Instruction({
