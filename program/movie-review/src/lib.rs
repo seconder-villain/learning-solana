@@ -79,7 +79,8 @@ pub fn add_movie_review(
     msg!("PDA created: {}", pda);
 
 
-    msg!("unpacking state account");
+    msg!("unpacking movie-review account");
+    // let mut account_data = MovieAccountState::try_from_slice(&pda_account.data.borrow()()).unwrap()();
     let mut account_data = try_from_slice_unchecked::<MovieAccountState>(&pda_account.data.borrow()).unwrap();
     msg!("borrowed account data");
 
@@ -90,7 +91,7 @@ pub fn add_movie_review(
 
     msg!("serializing account");
     account_data.serialize(&mut &mut pda_account.data.borrow_mut()[..])?;
-    msg!("state account serialized");
+    msg!("movie-review account serialized");
 
     Ok(())
 }
