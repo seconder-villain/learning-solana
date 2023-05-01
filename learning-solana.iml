@@ -6,9 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/program/instruction/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/program/movie-review/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/program/cpi/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/program/movie-program/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/program/instruction/target" />
       <excludeFolder url="file://$MODULE_DIR$/program/movie-review/target" />
       <excludeFolder url="file://$MODULE_DIR$/program/cpi/target" />
+      <excludeFolder url="file://$MODULE_DIR$/program/movie-program/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
